@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
   res.send(`Hello ${name}!`);
 });
 
+app.get("/test", (req, res) => {
+    res.send(`Hello test!`);
+  });
+
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`helloworld: listening on port ${port}`);
