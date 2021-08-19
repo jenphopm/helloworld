@@ -6,8 +6,12 @@ app.get("/", (req, res) => {
   res.send(`Hello ${name}!`);
 });
 
-app.get('/test', (req, res) => {
+app.get("/test", (req, res) => {
     res.send(`Hello test!`);
+  });
+
+  app.get("/jane", (req, res) => {
+    res.send(`Hello Jane!`);
   });
 
 const port = process.env.PORT || 8080;
